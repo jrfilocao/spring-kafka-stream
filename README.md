@@ -17,12 +17,9 @@ docker-compose up
 curl -X POST http://localhost:8080/events | jq .
 
 curl -v http://localhost:8080/emails | jq .
-curl -v http://localhost:8080/emails/total | jq .
 curl -v http://localhost:8080/emails/windowed | jq . 
-curl -v http://localhost:8080/emails/windowed | jq . | grep end | wc -l
 
 curl -v http://localhost:8080/domains | jq .
-curl -v http://localhost:8080/domains/total | jq .
 ```
 
 ## Stop and Clean Kafka Clusters
