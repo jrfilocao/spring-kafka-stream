@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    consumer:
+      group-id: tpd-loggers
+      auto-offset-reset: earliest
+    bootstrap-servers: localhost:9092
+
+tpd:
+  input-topic: input-topic
+  output-topic: output-topic
+  email-store: grouped-by-email
+  windowed-email-store: windowed-grouped-by-email
+  domain-store: grouped-by-domain
+  messages-per-request: 10
